@@ -11,19 +11,41 @@ var currentBand = "";
 var currentVeggie = "";
 
 // Get a reference to the appropriate DOM element for bands
-var bandElement = document.getElementById(???);
+var bandElement = document.getElementById("boy-bands");
 
 // Get a reference to the appropriate DOM element for vegetables
-var veggieElement = ???;
+var veggieElement = document.getElementById("vegetables");
+
+output = "";
 
 // Start looping
-for (var loopTracker = 0; loopTracker < loopCount; loopTracker += 1) {
+for (var i = 0; i < loopCount; i += 1) {
 
   // Add the band names into the correct <div>
-  currentBand = ???;
+  currentBand = bands[i];
+  console.log("currentBand", currentBand);
 
+  output = output + "<div>"; // output = <div>
+  console.log(output);
+  output = output + currentBand; // output = <div>currentBand
+  console.log(output);
+  output = output + "</div>" // output = <div>currentBand</div>
+  console.log(output);
 
   // Add the veggie names into the correct <div>
-  currentVeggie = ???;
+  // currentVeggie = vegetables[i];
+  // console.log("currentBand", currentBand);
 
 }
+
+bandElement.innerHTML = output;
+
+	// output = output + "<div>";  // output = <div>
+	// console.log(output);
+	// output = output + currentColor + " " + currentReindeer; // output = <div>currentColor currentReindeer
+	// console.log(output);
+	// output = output + "</div>"; // output = <div>currentColor currentReindeer</div>
+
+
+
+
